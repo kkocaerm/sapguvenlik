@@ -1,0 +1,51 @@
+title: SAP Güvenliği
+description: "SAP Güvenliği Yazı Dizisi — Loglama, SIEM Entegrasyonu, Detection ve Operasyonel Güvenlik"
+baseurl: "/sapguvenlik"
+url: "https://kkocaer.github.io"
+
+remote_theme: just-the-docs/just-the-docs@v0.10.0
+
+color_scheme: light
+
+# Arama
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s\-/]+/
+  rel_url: true
+  button: false
+
+# Navigasyon
+nav_sort: order
+
+# Footer
+footer_content: "SAP Güvenliği Yazı Dizisi · <a href=\"https://github.com/kkocaer\">kkocaer</a>"
+
+# Eklentiler
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+
+# Derleme ayarları
+encoding: utf-8
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Hariç tutulanlar
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - "*.sh"
+  - README.md
